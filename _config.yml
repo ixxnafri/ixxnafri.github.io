@@ -1,53 +1,55 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+title: Izz Fauzi
+author: ixxnafri
+email: izz.im.fauzi@gmail.com
+description: >- 
+  Testing setting this up this site
+show_excerpts: true # set to true to show excerpts on the homepage
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Samarjeet Singh 
-email: thelehhman@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Samarjeet Singh @thelehhman writings on design, development and more.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://thelehhman.com" # the base hostname & protocol for your site, e.g. http://example.com
-permalink: /:categories/:title/
+#baseurl: "" # the subpath of your site, e.g. /blog
+# url: "https://thelehhman.com" # the base hostname & protocol for your site, e.g. http://example.com
+sass:
+  sass_dir: _sass
 plainwhite:
-  name: Samarjeet Singh
-  tagline: Developer. Designer
+  name: Izz Fauzi
+  tagline: Developer.
   date_format: "%b %-d, %Y"
-  analytics_id: UA-127004425-1
-  disqus_shortname: thelehhman
+  sitemap: true # set to true to generate sitemap.xml content
+  search: true # set to true to enable searchbar
+  dark_mode: true # set to true to add dark mode toggle
+  #portfolio_image: "assets/portfolio.png" # the path from the base directory of the site to the image to display (no / at the start)
+  html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
 
   # generate social links in footer
   social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman
-    # rss: rss
+    #twitter: thelehhman
+    github:  ixxnafri
+    linkedIn: in/izz-im-fauzi
+    #rss: rss
+    #dribbble: jekyll
+    #flickr:   jekyll
+    #instagram: jekyll
+    #pinterest: jekyll
+    #youtube: jekyll
+    #facebook: jekyll
+    #soundcloud: jekyll
+    #telegram: jekyll
+    #gitlab: jekyll
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
+
 # Build settings
-markdown: kramdown
-remote_theme: thelehhman/plainwhite-jekyll
-show_excerpts: true
+theme: plainwhite
+
 plugins:
-  - jekyll-feed
-  - jekyll-redirect-from
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - jekyll-seo-tag
+#  - jekyll-feed
